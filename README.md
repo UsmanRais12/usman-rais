@@ -1,7 +1,3 @@
-Here’s a beautiful description for the README of your portfolio website:
-
----
-
 # Usman Rais - Portfolio Website
 
 Welcome to the official portfolio website of **Usman Rais**, a Full Stack Developer specializing in web and app development. This site, built using **React**, **Tailwind CSS**, **Vite**, and **Framer Motion**, showcases my skills, projects, and accomplishments in a sleek and modern design.
