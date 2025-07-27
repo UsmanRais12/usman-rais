@@ -73,12 +73,12 @@ export const PROJECTS = [
     link: "https://productfare.com/",
   },
   {
-    title: "BLOCKSHARE",
+    title: "MAN OF SPACE",
     image: BLOCKSHARE,
     description:
-      "A website to introduce a cutting-edge blockchain mobile app designed for secure verification and validation of documents, ensuring trust and transparency at your fingertips.",
+      "Man of Space is a dedicated eCommerce store offering unique, high-quality products inspired by space. From astronaut-themed apparel and cosmic home décor to educational space kits and accessories, everything is crafted for space enthusiasts, dreamers, and stargazers. Explore the universe—one product at a time.",
     technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
-    link: "https://blockshare.app/",
+    link: "https://manofspace.com/",
   },
   {
     title: "SAFECOVER LLC",
