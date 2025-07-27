@@ -76,8 +76,7 @@ export const PROJECTS = [
     title: "MAN OF SPACE",
     image: BLOCKSHARE,
     description:
-      "Man of Space is a dedicated eCommerce store offering unique, high-quality products inspired by space. From astronaut-themed apparel and cosmic home décor to educational space kits and accessories, everything is crafted for space enthusiasts, dreamers, and stargazers. Explore the universe—one product at a time.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "Man of Space is a dedicated eCommerce store offering unique, high-quality products inspired by space.",
     link: "https://manofspace.com/",
   },
   {
