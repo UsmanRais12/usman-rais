@@ -13,7 +13,7 @@ export default function Contact() {
     <section id="contact" aria-labelledby="contact-title" className="px-5 pb-10 pt-28 md:px-10 md:pt-40">
       <div className="mx-auto max-w-[90rem]">
         <p className="eyebrow">Contact</p>
-        <h2 id="contact-title" className="display mt-4 text-[clamp(3.5rem,13vw,12rem)]">
+        <h2 id="contact-title" className="display mt-4 text-[clamp(2.5rem,12.5vw,12rem)]">
           <span className="block">Let's build</span>
           <span className="block text-lime">something.</span>
         </h2>

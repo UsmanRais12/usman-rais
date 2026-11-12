@@ -27,10 +27,10 @@ export default function FastBlast() {
   return (
     <section id="fastblast" aria-labelledby="fastblast-title" className="relative overflow-hidden border-t border-line px-5 py-24 md:px-10 md:py-36">
       <div aria-hidden className="pointer-events-none absolute -left-40 bottom-0 h-[32rem] w-[32rem] rounded-full bg-lime/10 blur-3xl" />
-      <div className="relative mx-auto grid max-w-[90rem] items-center gap-16 lg:grid-cols-2">
+      <div className="relative mx-auto grid max-w-[90rem] items-center gap-16 lg:grid-cols-2 [&>*]:min-w-0">
         <div>
           <p className="eyebrow">{fastblast.kicker}</p>
-          <h2 id="fastblast-title" className="display mt-3 text-6xl md:text-8xl">
+          <h2 id="fastblast-title" className="display mt-3 text-[clamp(3rem,16vw,6rem)]">
             Fast<span className="text-lime">Blast</span>
           </h2>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-paper/90">{fastblast.blurb}</p>
