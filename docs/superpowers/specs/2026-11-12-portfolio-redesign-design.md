@@ -111,7 +111,8 @@ listing/` no longer exists.
 **Stack Pulse Studios:** a short block: "Need a full team? My studio builds
 it end to end". It covers websites, apps and Shopify stores. Brand assets are
 in `~/StackPulse/Website/stackpulse-site/src/assets` (`logo-nav-light.png`
-for dark backgrounds). There is no public studio URL; see open questions.
+for dark backgrounds). Public studio site: https://stackpulsestudios.com/
+(given by Usman 2026-11-12). The block's button links there.
 
 **About:**
 - Photo: the relaxed office photo (`src/assets/about.jpg`) in a circle with a
@@ -176,5 +177,8 @@ stores for brands in the US and Europe."
 
 ## Settled after review
 
-- Stack Pulse Studios block: its button scrolls to the contact block
-  (Claude's call; there is no public studio URL).
+- Stack Pulse Studios block: its button links to https://stackpulsestudios.com/
+  (Usman).
+- Deploy: Usman confirmed the GitHub repo is connected to Netlify, so a push
+  to `main` goes live. Work stays on `redesign-2026` until Usman approves the
+  finished page; then it merges to `main`.
