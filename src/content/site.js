@@ -57,7 +57,7 @@ export const projects = [
     url: "https://brooklynsells.com/",
     platform: "Shopify",
     tags: ["Shopify", "SEO"],
-    blurb: "Hand-picked daily deals on toys, kitchen and home, plus digital e-books, in one fast storefront.",
+    blurb: "Hand-picked daily deals on toys, kitchen and home, plus digital e-books, in one Shopify storefront.",
     role: "Designed & built the store",
     image: "brooklyn-sells-daily-deals-store.webp",
   },

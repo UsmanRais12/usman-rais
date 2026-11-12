@@ -30,7 +30,7 @@ export default function FastBlast() {
       <div className="relative mx-auto grid max-w-[90rem] items-center gap-16 lg:grid-cols-2 [&>*]:min-w-0">
         <div>
           <p className="eyebrow">{fastblast.kicker}</p>
-          <h2 id="fastblast-title" className="display mt-3 text-[clamp(3rem,16vw,6rem)]">
+          <h2 id="fastblast-title" className="display mt-3 text-[clamp(2.5rem,13vw,6rem)]">
             Fast<span className="text-lime">Blast</span>
           </h2>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-paper/90">{fastblast.blurb}</p>

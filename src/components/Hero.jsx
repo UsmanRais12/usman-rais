@@ -3,10 +3,8 @@ import { profile } from "../content/site.js";
 import { scrollToId, useParallax } from "../lib/motion.js";
 
 export default function Hero() {
-  const nameRef = useRef(null);
-  const metaRef = useRef(null);
-  useParallax(nameRef, 0.55);
-  useParallax(metaRef, 0.9);
+  const moveRef = useRef(null);
+  useParallax(moveRef, 0.6);
 
   const go = (id) => (e) => {
     e.preventDefault();
@@ -18,18 +16,18 @@ export default function Hero() {
       {/* soft lime glow, drifts with the name */}
       <div aria-hidden className="pointer-events-none absolute -right-40 top-10 h-[36rem] w-[36rem] rounded-full bg-lime/10 blur-3xl" />
 
-      <div className="mx-auto w-full max-w-[90rem]">
+      <div ref={moveRef} className="mx-auto w-full max-w-[90rem]">
         <p className="mb-8 inline-flex items-center gap-2 rounded-full bg-lime px-3 py-1 text-xs font-semibold text-ink">
           <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-ink" aria-hidden />
           {profile.available}
         </p>
 
-        <h1 id="hero-name" ref={nameRef} className="display text-[clamp(4.5rem,22vw,15.5rem)]">
+        <h1 id="hero-name" className="display text-[clamp(4.5rem,22vw,15.5rem)]">
           <span className="block">{profile.first}</span>
           <span className="block text-lime">{profile.last}</span>
         </h1>
 
-        <div ref={metaRef} className="mt-10 grid gap-8 md:grid-cols-[1fr_auto] md:items-end">
+        <div className="mt-10 grid gap-8 md:grid-cols-[1fr_auto] md:items-end">
           <div className="max-w-xl">
             <p className="eyebrow">{profile.role}</p>
             <p className="mt-3 text-xl leading-snug text-paper md:text-2xl">{profile.pitch}</p>

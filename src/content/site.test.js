@@ -56,6 +56,12 @@ describe("site content", () => {
     }
   });
 
+  test("no unverifiable superlatives in project copy", () => {
+    for (const p of projects) {
+      expect(p.blurb, p.slug).not.toMatch(/\b(fast|fastest|best|leading|#1|award)\b/i);
+    }
+  });
+
   test("fastblast links to Google Play", () => {
     expect(fastblast.playUrl).toBe("https://play.google.com/store/apps/details?id=com.fastblast.app");
     expect(fastblast.screens).toHaveLength(3);

@@ -3,7 +3,7 @@ import { projectImages } from "../content/images.js";
 export default function ProjectCard({ project, index }) {
   const img = projectImages[project.slug];
   return (
-    <article data-project={project.slug} className="group flex w-full shrink-0 flex-col lg:w-[min(46rem,62vw)]">
+    <article data-project={project.slug} className="group flex w-full shrink-0 flex-col lg:motion-safe:w-[min(46rem,62vw)]">
       <a href={project.url} target="_blank" rel="noopener noreferrer" className="block overflow-hidden rounded-xl border border-line bg-coal" aria-label={`Visit ${project.name}`}>
         <img
           src={img.src}
@@ -12,7 +12,7 @@ export default function ProjectCard({ project, index }) {
           alt={`${project.name} website`}
           loading="lazy"
           decoding="async"
-          className="aspect-[16/10] w-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.03]"
+          className="aspect-[16/10] w-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.03] lg:motion-safe:aspect-auto lg:motion-safe:h-[min(28.75rem,calc(100svh-32rem))]"
         />
       </a>
       <div className="mt-5 flex items-start justify-between gap-6">

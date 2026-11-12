@@ -22,6 +22,14 @@
     outline: 2px solid #d4ff3f;
     outline-offset: 3px;
   }
+  /* on the lime studio card a lime ring would be invisible */
+  #studio :focus-visible {
+    outline-color: #0a0a0a;
+  }
+  /* sections receive focus from in-page links; no ring around a whole section */
+  section:focus {
+    outline: none;
+  }
 }
 
 /* Lenis */

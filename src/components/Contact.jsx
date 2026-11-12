@@ -13,7 +13,7 @@ export default function Contact() {
     <section id="contact" aria-labelledby="contact-title" className="px-5 pb-10 pt-28 md:px-10 md:pt-40">
       <div className="mx-auto max-w-[90rem]">
         <p className="eyebrow">Contact</p>
-        <h2 id="contact-title" className="display mt-4 text-[clamp(2.5rem,12.5vw,12rem)]">
+        <h2 id="contact-title" className="display mt-4 text-[clamp(2.25rem,11.5vw,12rem)]">
           <span className="block">Let's build</span>
           <span className="block text-lime">something.</span>
         </h2>
@@ -24,7 +24,7 @@ export default function Contact() {
         <ul className="mt-16 grid gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-2 lg:grid-cols-5">
           {links.map(({ label, value, href, Icon, external }) => (
             <li key={label} className="bg-ink">
-              <a href={href} {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})} className="group flex h-full flex-col justify-between gap-6 p-6 transition-colors hover:bg-coal">
+              <a href={href} {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})} className="group flex h-full flex-col justify-between gap-6 p-6 transition-colors hover:bg-coal focus-visible:outline-offset-[-3px]">
                 <span className="eyebrow flex items-center gap-2">
                   {Icon && <Icon className="h-3.5 w-3.5" aria-hidden />}
                   {label}
