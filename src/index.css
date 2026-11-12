@@ -1,7 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-:root{
-  font-family: "Inter", sans-serif;
+
+@layer base {
+  html {
+    background: #0a0a0a;
+    color: #fafafa;
+    color-scheme: dark;
+    -webkit-font-smoothing: antialiased;
+    scroll-padding-top: 4.5rem;
+  }
+  body {
+    @apply bg-ink font-sans text-paper;
+    overflow-x: clip;
+  }
+  ::selection {
+    background: #d4ff3f;
+    color: #0a0a0a;
+  }
+  :focus-visible {
+    outline: 2px solid #d4ff3f;
+    outline-offset: 3px;
+  }
+}
+
+/* Lenis */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+@layer components {
+  .eyebrow {
+    @apply text-xs font-medium uppercase tracking-[0.22em] text-mute;
+  }
+  .display {
+    @apply font-display uppercase leading-[0.86] tracking-tightest;
+  }
+  .btn-lime {
+    @apply inline-flex items-center gap-2 rounded-full bg-lime px-6 py-3 text-sm font-semibold text-ink transition-transform hover:-translate-y-0.5;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 rounded-full border border-line px-6 py-3 text-sm font-semibold text-paper transition-colors hover:border-paper;
+  }
+}
+
+/* Skills ticker: transform-only marquee */
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+.marquee {
+  animation: marquee 40s linear infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee {
+    animation: none;
+  }
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+  }
 }
